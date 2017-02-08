@@ -5,8 +5,22 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Windoitws extends JFrame {
-	CloseButton close =new CloseButton();
+/**
+ * <h1>Windows:</h1> 
+ * <p> Windows class created to discribe the notes windows it locl . </p>
+ * @author mohannadprogrammer
+ * 
+ *@version 1.0.0
+ */
+public class Windows extends JFrame {
+	/*
+	 * 
+	 * 
+	 * 
+	 * */
+	private CloseButton close =new CloseButton();
+	
+	//
 	public Windows (){
 		Container content =getContentPane();
 		
@@ -20,8 +34,10 @@ public class Windoitws extends JFrame {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				// TODO Auto-generated method stub
-				setVisible(false);
+				// TODO Auto-generated method stube
+				dispose();
+				System.exit(0);
+				
 			}
 		});
 		
@@ -30,4 +46,5 @@ public class Windoitws extends JFrame {
 		setSize(350,250);
 		setVisible(true);
 	}
+	
 }
