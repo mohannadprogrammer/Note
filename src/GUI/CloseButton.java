@@ -10,14 +10,12 @@ import javax.swing.*;
  *
  */
 class CloseButton extends JButton {
-	public static int winNum =0;
 	ImageIcon icon =new ImageIcon("image/images.png");
 	/**
 	 * 
 	 */
 	public CloseButton (){
 		super();
-		winNum++;
 		setBackground(Color.YELLOW);
 		setIcon(icon);
 		setBounds(0,10,30,30);

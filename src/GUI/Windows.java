@@ -19,9 +19,11 @@ public class Windows extends JFrame {
 	 * 
 	 * */
 	private CloseButton close =new CloseButton();
-	
+	public static int winNum=0;
 	//
 	public Windows (){
+
+		winNum++;
 		Container content =getContentPane();
 		
 		JTextArea text =new JTextArea();
